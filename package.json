@@ -1,0 +1,11 @@
+{
+  "name": "kiwi-homework-server",
+  "version": "1.0.0",
+  "description": "REST server for number to words list conversion",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marco Nucara",
+  "license": "ISC"
+}
