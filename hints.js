@@ -14,7 +14,7 @@ const conversions = [
   ['w', 'x', 'y', 'z'],
 ];
 
-const getHints = (number, hints = dictionary, index = 0) => {
+const getHints = (number, hints, index = 0) => {
   const letters = conversions[number[index]];
 
   const filteredHints = hints.filter(word => word[index] && letters.indexOf(word[index]) >= 0);
@@ -28,4 +28,4 @@ const getHints = (number, hints = dictionary, index = 0) => {
 
 module.exports = (number, dictionary = defaultDictionary) => {
   return getHints(number, dictionary.filter(word => word.length === number.length));
-}
+};
