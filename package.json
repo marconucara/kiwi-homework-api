@@ -1,11 +1,17 @@
 {
-  "name": "kiwi-homework-server",
+  "name": "kiwi-homework-api",
   "version": "1.0.0",
-  "description": "REST server for number to words list conversion",
+  "description": "REST api for number to words list conversion",
   "scripts": {
     "start": "node index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Marco Nucara",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.6.0"
+  }
 }

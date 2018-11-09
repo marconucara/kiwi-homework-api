@@ -14,7 +14,7 @@ http.createServer((request, response) => {
     response.write(JSON.stringify({ hints }));
   } else {
     response.writeHead(404, { 'Content-Type': 'application/json' });
-    response.write(JSON.stringify({ 
+    response.write(JSON.stringify({
       message: '404 - The only valid route for this server is "/<a-number>"',
     }));
   }
