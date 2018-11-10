@@ -1,5 +1,5 @@
 
-const defaultDictionary = ['ab', 'ac', 'aca', 'add'];
+const defaultDictionary = require('an-array-of-english-words');
 
 const conversions = [
   [],
