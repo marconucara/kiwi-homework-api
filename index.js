@@ -3,7 +3,7 @@ const url = require('url');
 
 const getHintByNumber = require('./hints');
 
-http.createServer((request, response) => {
+const server = http.createServer((request, response) => {
   const parsedUrl = url.parse(request.url);
 
   // Set CORS headers
@@ -25,4 +25,10 @@ http.createServer((request, response) => {
     }));
   }
   response.end();
-}).listen(process.env.NODE_PORT || 8888);
+});
+
+server.on('error', (e) => {
+  console.error(e.message);
+});
+
+server.listen(process.env.NODE_PORT || 8888);
