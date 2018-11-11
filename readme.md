@@ -27,7 +27,7 @@ e.g. `http://localhost:8888/3838`
 
 It will return a JSON with an array of hints.
 
-You may also run [web client](https://github.com/marconucara/kiwi-homework-web).
+You may also run [web client](https://github.com/marconucara/kiwi-homework-web) or [native app client](https://github.com/marconucara/kiwi-homework-native)
 
 This api use real english words from npm package [an-array-of-english-words](https://www.npmjs.com/package/an-array-of-english-words)
 
